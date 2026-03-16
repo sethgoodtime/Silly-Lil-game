@@ -14,6 +14,6 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_SILLY_LIL_GAME }}'
           channelId: live
           projectId: silly-lil-game
-        # The key fix: This prevents the action from trying to run 'npm' commands
         env:
+          # This is the secret sauce: it stops the runner from looking for npm/package.json
           FIREBASE_CLI_PREDEPLOY: "false"
