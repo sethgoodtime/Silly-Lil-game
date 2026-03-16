@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    background: #0a0a0c;
+    color: #00ffcc;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#game-container {
+    position: relative;
+    border: 2px solid #333;
+}
+
+#ui {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2rem;
+    pointer-events: none;
+}
+
+#overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #00ffcc;
+}
+
+.hidden { display: none; }
+
+canvas {
+    background: radial-gradient(circle, #1b2735 0%, #090a0f 100%);
+}
